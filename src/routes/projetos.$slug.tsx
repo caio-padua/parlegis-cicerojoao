@@ -58,7 +58,7 @@ function ProjetoDetalhe() {
 
         <Link
           to="/contato"
-          className="mt-8 inline-flex items-center justify-center rounded-full bg-[var(--bordo)] px-5 py-3 text-sm font-semibold text-[var(--branco-quente)] hover:bg-[var(--vermelho)]"
+          className="mt-8 inline-flex items-center justify-center rounded-md bg-[var(--champagne)] px-5 py-3 text-sm font-semibold text-[var(--grafite)] ring-1 ring-[var(--ouro)] hover:bg-[var(--ouro)] hover:text-[var(--branco-quente)]"
         >
           Falar com o gabinete sobre este projeto
         </Link>

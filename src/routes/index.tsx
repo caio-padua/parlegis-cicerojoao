@@ -58,17 +58,17 @@ function Home() {
               Atendimento, presença nos bairros e transparência em um só lugar.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg" className="rounded-full bg-[var(--bordo)] text-[var(--branco-quente)] hover:bg-[var(--vermelho)]">
+              <Button asChild size="lg" className="rounded-md bg-[var(--champagne)] text-[var(--grafite)] ring-1 ring-[var(--ouro)] hover:bg-[var(--ouro)] hover:text-[var(--branco-quente)]">
                 <Link to="/contato">
                   <Send className="mr-2 h-4 w-4" /> Enviar uma demanda
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="secondary" className="rounded-full bg-[var(--champagne)] text-[var(--grafite)] hover:bg-[var(--champagne)]/80">
+              <Button asChild size="lg" variant="outline" className="rounded-md border-[var(--ouro)] text-[var(--bordo)] hover:bg-[var(--champagne)]/40">
                 <Link to="/agenda">
                   <CalendarDays className="mr-2 h-4 w-4" /> Agendar atendimento
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="rounded-full border-[var(--ouro)] text-[var(--bordo)] hover:bg-[var(--champagne)]/40">
+              <Button asChild size="lg" variant="ghost" className="rounded-md text-[var(--bordo)] hover:bg-[var(--creme)]">
                 <Link to="/projetos">
                   <FileText className="mr-2 h-4 w-4" /> Conhecer projetos
                 </Link>
@@ -150,7 +150,7 @@ function Home() {
               tempo e com transparência total.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button asChild className="rounded-full bg-[var(--bordo)] text-[var(--branco-quente)] hover:bg-[var(--vermelho)]">
+              <Button asChild className="rounded-md bg-[var(--champagne)] text-[var(--grafite)] ring-1 ring-[var(--ouro)] hover:bg-[var(--ouro)] hover:text-[var(--branco-quente)]">
                 <Link to="/contato">Acessar área do cidadão <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>

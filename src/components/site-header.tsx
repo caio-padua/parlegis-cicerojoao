@@ -40,7 +40,7 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              className="rounded-full px-3 py-2 text-sm font-medium text-[var(--branco-quente)]/85 transition-colors hover:bg-white/5 hover:text-[var(--champagne)]"
+              className="rounded-md px-3 py-2 text-sm font-medium text-[var(--branco-quente)]/85 transition-colors hover:bg-white/5 hover:text-[var(--champagne)]"
               activeProps={{ className: "text-[var(--champagne)] bg-white/10" }}
               activeOptions={{ exact: item.to === "/" }}
             >
@@ -49,7 +49,7 @@ export function SiteHeader() {
           ))}
           <Link
             to="/contato"
-            className="ml-3 inline-flex items-center justify-center rounded-full bg-[var(--bordo)] px-4 py-2 text-sm font-semibold text-[var(--branco-quente)] shadow-sm transition-colors hover:bg-[var(--vermelho)]"
+            className="ml-3 inline-flex items-center justify-center rounded-md bg-[var(--champagne)] px-4 py-2 text-sm font-semibold text-[var(--grafite)] ring-1 ring-[var(--ouro)] shadow-sm transition-colors hover:bg-[var(--ouro)] hover:text-[var(--branco-quente)]"
           >
             Enviar demanda
           </Link>

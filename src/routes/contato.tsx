@@ -105,7 +105,7 @@ function Contato() {
             type="submit"
             disabled={enviando}
             size="lg"
-            className="w-full rounded-full bg-[var(--bordo)] text-[var(--branco-quente)] hover:bg-[var(--vermelho)] sm:w-auto"
+            className="w-full rounded-md bg-[var(--champagne)] text-[var(--grafite)] ring-1 ring-[var(--ouro)] hover:bg-[var(--ouro)] hover:text-[var(--branco-quente)] sm:w-auto"
           >
             <Send className="mr-2 h-4 w-4" />
             {enviando ? "Enviando..." : "Enviar demanda"}
