@@ -150,7 +150,7 @@ function Home() {
               tempo e com transparência total.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button asChild className="rounded-full bg-[var(--bordo)] text-[var(--branco-quente)] hover:bg-[var(--vermelho)]">
+              <Button asChild className="rounded-md bg-[var(--champagne)] text-[var(--grafite)] ring-1 ring-[var(--ouro)] hover:bg-[var(--ouro)] hover:text-[var(--branco-quente)]">
                 <Link to="/contato">Acessar área do cidadão <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
