@@ -3,7 +3,8 @@ import { ArrowRight, CalendarDays, FileText, MapPin, Send } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import heroFoto from "@/assets/cicero-hero.jpg";
+import heroFotoAsset from "@/assets/cicero-joao.jpg.asset.json";
+const heroFoto = heroFotoAsset.url;
 import sorocabaImg from "@/assets/sorocaba.jpg";
 import {
   agenda,
