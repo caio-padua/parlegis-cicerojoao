@@ -88,6 +88,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#102D3C" },
+      { property: "og:title", content: "Cícero João — Vereador de Sorocaba | Gabinete Digital" },
+      { name: "twitter:title", content: "Cícero João — Vereador de Sorocaba | Gabinete Digital" },
+      { name: "description", content: "This application serves as an institutional mandate portal and digital office for Cícero João, a Sorocaba councilman." },
+      { property: "og:description", content: "This application serves as an institutional mandate portal and digital office for Cícero João, a Sorocaba councilman." },
+      { name: "twitter:description", content: "This application serves as an institutional mandate portal and digital office for Cícero João, a Sorocaba councilman." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7bc61a15-659c-4187-8b77-dbc517af64d4/id-preview-89e7b09a--417e5491-c0af-493a-9c30-d9bd35d36c25.lovable.app-1781022290199.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7bc61a15-659c-4187-8b77-dbc517af64d4/id-preview-89e7b09a--417e5491-c0af-493a-9c30-d9bd35d36c25.lovable.app-1781022290199.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
