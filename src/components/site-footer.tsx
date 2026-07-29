@@ -71,7 +71,7 @@ export function SiteFooter() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-[var(--ouro)]/25 pt-6 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Gabinete Cícero João. Todos os direitos reservados.</p>
-          <p>Mandato vinculado ao <span className="text-[var(--champagne)]">PSB</span> — Sorocaba/SP.</p>
+          <p>Sorocaba — SP.</p>
         </div>
       </div>
     </footer>

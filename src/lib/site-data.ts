@@ -112,7 +112,7 @@ export const noticias = [
 ];
 
 export const agenda = [
-  { data: "Toda terça · 14h", titulo: "Atendimento no Gabinete", local: "Câmara Municipal — Sala 12" },
+  { data: "Toda terça · 14h", titulo: "Atendimento no Gabinete", local: "Escritório de atendimento — Centro" },
   { data: "1ª quinta do mês · 19h", titulo: "Reunião aberta — Zona Norte", local: "Salão paroquial — Aparecidinha" },
   { data: "Sábados alternados · 9h", titulo: "Cícero nos Bairros", local: "Roteiro divulgado nas redes" },
 ];

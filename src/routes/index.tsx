@@ -51,7 +51,7 @@ function Home() {
               Cícero João
             </h1>
             <p className="mt-3 font-display text-2xl text-[var(--petroleo)]">
-              Vereador por Sorocaba
+              Trabalho público em Sorocaba
             </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Um mandato próximo, organizado e aberto para ouvir a população.

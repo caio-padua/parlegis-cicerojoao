@@ -145,7 +145,7 @@ function Contato() {
           <div className="card-premium p-6">
             <h2 className="font-display text-lg text-[var(--bordo)]">Atendimento presencial</h2>
             <p className="mt-3 text-sm text-muted-foreground">
-              Todas as terças, das 14h às 18h, na sala 12 da Câmara Municipal. Para encontros em outros horários, agende pelo formulário ao lado.
+              Todas as terças, das 14h às 18h, no escritório de atendimento em Sorocaba. Para encontros em outros horários, agende pelo formulário ao lado.
             </p>
           </div>
         </aside>

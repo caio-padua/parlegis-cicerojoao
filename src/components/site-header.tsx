@@ -33,7 +33,7 @@ export function SiteHeader() {
               Cícero João
             </span>
             <span className="text-[11px] uppercase tracking-[0.18em] text-[var(--champagne)]/90">
-              Vereador · Sorocaba
+              Sorocaba · São Paulo
             </span>
           </span>
         </Link>
