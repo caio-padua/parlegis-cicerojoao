@@ -10,6 +10,7 @@ const nav = [
   { to: "/biografia", label: "Biografia" },
   { to: "/mandato", label: "Mandato" },
   { to: "/projetos", label: "Projetos e Leis" },
+  { to: "/videos", label: "Vídeos" },
   { to: "/bairros", label: "Bairros" },
   { to: "/agenda", label: "Agenda" },
   { to: "/noticias", label: "Notícias" },

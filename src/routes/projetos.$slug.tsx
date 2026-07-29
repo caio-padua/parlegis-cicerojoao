@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
+import { VideoEmbed } from "@/components/video-embed";
 import { Badge } from "@/components/ui/badge";
 import { projetos } from "@/lib/site-data";
 
@@ -49,6 +50,25 @@ function ProjetoDetalhe() {
         </div>
         <h1 className="mt-4 font-display text-4xl leading-tight text-[var(--bordo)]">{projeto.titulo}</h1>
         <p className="mt-6 text-lg text-muted-foreground leading-relaxed">{projeto.resumo}</p>
+
+        <div className="mt-10">
+          <h2 className="font-display text-xl text-[var(--bordo)]">
+            Entenda em vídeo
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Uma explicação curta e direta sobre o que esta proposta muda na vida
+            de quem mora em Sorocaba.
+          </p>
+          <div className="mt-4">
+            <VideoEmbed youtubeId={projeto.youtubeId} titulo={projeto.titulo} />
+          </div>
+          <Link
+            to="/videos"
+            className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--bordo)] hover:text-[var(--vermelho)]"
+          >
+            Ver todos os vídeos
+          </Link>
+        </div>
 
         <div className="card-premium mt-12 p-6 text-sm text-muted-foreground">
           O texto integral e a tramitação podem ser consultados nos sistemas

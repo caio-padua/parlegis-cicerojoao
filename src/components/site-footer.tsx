@@ -38,6 +38,7 @@ export function SiteFooter() {
               <li><Link to="/biografia" className="hover:text-[var(--champagne)]">Biografia</Link></li>
               <li><Link to="/mandato" className="hover:text-[var(--champagne)]">Mandato em números</Link></li>
               <li><Link to="/projetos" className="hover:text-[var(--champagne)]">Projetos e leis</Link></li>
+              <li><Link to="/videos" className="hover:text-[var(--champagne)]">Vídeos</Link></li>
               <li><Link to="/agenda" className="hover:text-[var(--champagne)]">Agenda pública</Link></li>
             </ul>
           </div>
