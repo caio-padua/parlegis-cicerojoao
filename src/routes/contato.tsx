@@ -137,7 +137,7 @@ function Contato() {
                 <MapPin className="mt-0.5 h-4 w-4 text-[var(--bordo)]" />
                 <div>
                   <p className="font-medium">Endereço</p>
-                  <p className="text-muted-foreground">Câmara Municipal de Sorocaba — SP</p>
+                  <p className="text-muted-foreground">Sorocaba — SP</p>
                 </div>
               </li>
             </ul>

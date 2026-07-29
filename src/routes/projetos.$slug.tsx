@@ -52,7 +52,7 @@ function ProjetoDetalhe() {
 
         <div className="card-premium mt-12 p-6 text-sm text-muted-foreground">
           O texto integral e a tramitação podem ser consultados nos sistemas
-          oficiais da Câmara Municipal de Sorocaba. Em caso de dúvidas sobre
+          oficiais de Sorocaba. Em caso de dúvidas sobre
           este documento, fale com o gabinete.
         </div>
 

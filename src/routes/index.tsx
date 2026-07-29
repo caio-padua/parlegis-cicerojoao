@@ -18,13 +18,13 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cícero João — Vereador de Sorocaba" },
+      { title: "Cícero João — Sorocaba" },
       {
         name: "description",
         content:
-          "Portal do mandato do vereador Cícero João: atendimento, presença nos bairros e transparência em um só lugar.",
+          "Portal do mandato do Cícero João: atendimento, presença nos bairros e transparência em um só lugar.",
       },
-      { property: "og:title", content: "Cícero João — Vereador de Sorocaba" },
+      { property: "og:title", content: "Cícero João — Sorocaba" },
       {
         property: "og:description",
         content:
@@ -80,7 +80,7 @@ function Home() {
             <div className="absolute inset-0 -translate-x-3 translate-y-3 rounded-[2rem] bg-[var(--champagne)]/60" aria-hidden />
             <img
               src={heroFoto}
-              alt="Retrato institucional do vereador Cícero João"
+              alt="Retrato institucional do Cícero João"
               width={1024}
               height={1280}
               className="relative aspect-[4/5] w-full rounded-[2rem] object-cover shadow-elegant ring-1 ring-[var(--ouro)]/40"
@@ -131,7 +131,7 @@ function Home() {
             ))}
           </div>
           <p className="mt-6 text-xs text-white/60">
-            Dados consolidados a partir dos registros públicos da Câmara Municipal de Sorocaba. Sujeito a atualização.
+            Dados consolidados a partir dos registros públicos de Sorocaba. Sujeito a atualização.
           </p>
         </div>
       </section>

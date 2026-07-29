@@ -6,7 +6,7 @@
 
 /*
  * Gabinete Digital Cícero João — Sistema de Design
- * Paleta PSB Institucional Premium em oklch.
+ * Paleta institucional premium em oklch.
  * Bordô #8B1E2D · Vermelho social #B3262E · Ouro velho #C99A2E
  * Champagne #E7C873 · Creme #F8F3E8 · Branco quente #FFFDF8
  * Grafite #242424 · Azul petróleo #102D3C
@@ -73,7 +73,7 @@
 :root {
   --radius: 0.875rem;
 
-  /* Paleta PSB Premium em oklch */
+  /* Paleta premium em oklch */
   --bordo: oklch(0.42 0.14 24);          /* #8B1E2D */
   --vermelho: oklch(0.48 0.17 25);       /* #B3262E */
   --ouro: oklch(0.71 0.13 78);           /* #C99A2E */

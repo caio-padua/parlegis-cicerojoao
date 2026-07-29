@@ -8,7 +8,7 @@ export const Route = createFileRoute("/projetos")({
   head: () => ({
     meta: [
       { title: "Projetos e Leis — Cícero João" },
-      { name: "description", content: "Projetos de lei, indicações e leis sancionadas de autoria do vereador Cícero João." },
+      { name: "description", content: "Projetos de lei, indicações e leis sancionadas de autoria do Cícero João." },
       { property: "og:title", content: "Projetos e Leis — Cícero João" },
       { property: "og:description", content: "Acompanhe a produção legislativa do mandato." },
       { property: "og:url", content: "/projetos" },

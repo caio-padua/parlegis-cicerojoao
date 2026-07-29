@@ -107,7 +107,7 @@ export const noticias = [
     titulo: "Audiência pública debate apoio ao comércio de bairro",
     data: "10 de fevereiro de 2025",
     resumo:
-      "Vereador participa de debate com pequenos empresários sobre desburocratização e crédito.",
+      "Cícero João participa de debate com pequenos empresários sobre desburocratização e crédito.",
   },
 ];
 
