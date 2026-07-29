@@ -38,6 +38,7 @@ export function SiteFooter() {
               <li><Link to="/biografia" className="hover:text-[var(--champagne)]">Biografia</Link></li>
               <li><Link to="/mandato" className="hover:text-[var(--champagne)]">Mandato em números</Link></li>
               <li><Link to="/projetos" className="hover:text-[var(--champagne)]">Projetos e leis</Link></li>
+              <li><Link to="/videos" className="hover:text-[var(--champagne)]">Vídeos</Link></li>
               <li><Link to="/agenda" className="hover:text-[var(--champagne)]">Agenda pública</Link></li>
             </ul>
           </div>
@@ -47,7 +48,7 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-3 text-sm text-white/80">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 text-[var(--ouro)]" />
-                Câmara Municipal de Sorocaba — SP
+                Sorocaba — SP
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="h-4 w-4 mt-0.5 text-[var(--ouro)]" />
@@ -71,7 +72,7 @@ export function SiteFooter() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-[var(--ouro)]/25 pt-6 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Gabinete Cícero João. Todos os direitos reservados.</p>
-          <p>Mandato vinculado ao <span className="text-[var(--champagne)]">PSB</span> — Sorocaba/SP.</p>
+          <p>Sorocaba — SP.</p>
         </div>
       </div>
     </footer>

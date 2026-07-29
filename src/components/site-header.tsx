@@ -10,6 +10,7 @@ const nav = [
   { to: "/biografia", label: "Biografia" },
   { to: "/mandato", label: "Mandato" },
   { to: "/projetos", label: "Projetos e Leis" },
+  { to: "/videos", label: "Vídeos" },
   { to: "/bairros", label: "Bairros" },
   { to: "/agenda", label: "Agenda" },
   { to: "/noticias", label: "Notícias" },
@@ -33,7 +34,7 @@ export function SiteHeader() {
               Cícero João
             </span>
             <span className="text-[11px] uppercase tracking-[0.18em] text-[var(--champagne)]/90">
-              Vereador · Sorocaba
+              Sorocaba · São Paulo
             </span>
           </span>
         </Link>

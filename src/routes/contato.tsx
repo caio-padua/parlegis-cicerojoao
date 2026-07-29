@@ -137,7 +137,7 @@ function Contato() {
                 <MapPin className="mt-0.5 h-4 w-4 text-[var(--bordo)]" />
                 <div>
                   <p className="font-medium">Endereço</p>
-                  <p className="text-muted-foreground">Câmara Municipal de Sorocaba — SP</p>
+                  <p className="text-muted-foreground">Sorocaba — SP</p>
                 </div>
               </li>
             </ul>
@@ -145,7 +145,7 @@ function Contato() {
           <div className="card-premium p-6">
             <h2 className="font-display text-lg text-[var(--bordo)]">Atendimento presencial</h2>
             <p className="mt-3 text-sm text-muted-foreground">
-              Todas as terças, das 14h às 18h, na sala 12 da Câmara Municipal. Para encontros em outros horários, agende pelo formulário ao lado.
+              Todas as terças, das 14h às 18h, no escritório de atendimento em Sorocaba. Para encontros em outros horários, agende pelo formulário ao lado.
             </p>
           </div>
         </aside>

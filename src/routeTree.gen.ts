@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VideosRouteImport } from './routes/videos'
 import { Route as ProjetosRouteImport } from './routes/projetos'
 import { Route as NoticiasRouteImport } from './routes/noticias'
 import { Route as MandatoRouteImport } from './routes/mandato'
@@ -19,6 +20,11 @@ import { Route as AgendaRouteImport } from './routes/agenda'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjetosSlugRouteImport } from './routes/projetos.$slug'
 
+const VideosRoute = VideosRouteImport.update({
+  id: '/videos',
+  path: '/videos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProjetosRoute = ProjetosRouteImport.update({
   id: '/projetos',
   path: '/projetos',
@@ -74,6 +80,7 @@ export interface FileRoutesByFullPath {
   '/mandato': typeof MandatoRoute
   '/noticias': typeof NoticiasRoute
   '/projetos': typeof ProjetosRouteWithChildren
+  '/videos': typeof VideosRoute
   '/projetos/$slug': typeof ProjetosSlugRoute
 }
 export interface FileRoutesByTo {
@@ -85,6 +92,7 @@ export interface FileRoutesByTo {
   '/mandato': typeof MandatoRoute
   '/noticias': typeof NoticiasRoute
   '/projetos': typeof ProjetosRouteWithChildren
+  '/videos': typeof VideosRoute
   '/projetos/$slug': typeof ProjetosSlugRoute
 }
 export interface FileRoutesById {
@@ -97,6 +105,7 @@ export interface FileRoutesById {
   '/mandato': typeof MandatoRoute
   '/noticias': typeof NoticiasRoute
   '/projetos': typeof ProjetosRouteWithChildren
+  '/videos': typeof VideosRoute
   '/projetos/$slug': typeof ProjetosSlugRoute
 }
 export interface FileRouteTypes {
@@ -110,6 +119,7 @@ export interface FileRouteTypes {
     | '/mandato'
     | '/noticias'
     | '/projetos'
+    | '/videos'
     | '/projetos/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -121,6 +131,7 @@ export interface FileRouteTypes {
     | '/mandato'
     | '/noticias'
     | '/projetos'
+    | '/videos'
     | '/projetos/$slug'
   id:
     | '__root__'
@@ -132,6 +143,7 @@ export interface FileRouteTypes {
     | '/mandato'
     | '/noticias'
     | '/projetos'
+    | '/videos'
     | '/projetos/$slug'
   fileRoutesById: FileRoutesById
 }
@@ -144,10 +156,18 @@ export interface RootRouteChildren {
   MandatoRoute: typeof MandatoRoute
   NoticiasRoute: typeof NoticiasRoute
   ProjetosRoute: typeof ProjetosRouteWithChildren
+  VideosRoute: typeof VideosRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/videos': {
+      id: '/videos'
+      path: '/videos'
+      fullPath: '/videos'
+      preLoaderRoute: typeof VideosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projetos': {
       id: '/projetos'
       path: '/projetos'
@@ -235,6 +255,7 @@ const rootRouteChildren: RootRouteChildren = {
   MandatoRoute: MandatoRoute,
   NoticiasRoute: NoticiasRoute,
   ProjetosRoute: ProjetosRouteWithChildren,
+  VideosRoute: VideosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

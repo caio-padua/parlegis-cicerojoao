@@ -6,9 +6,9 @@ export const Route = createFileRoute("/mandato")({
   head: () => ({
     meta: [
       { title: "Mandato em números — Cícero João" },
-      { name: "description", content: "Produção parlamentar do vereador Cícero João: requerimentos, indicações, projetos de lei e emendas." },
+      { name: "description", content: "Produção parlamentar do Cícero João: requerimentos, indicações, projetos de lei e emendas." },
       { property: "og:title", content: "Mandato em números — Cícero João" },
-      { property: "og:description", content: "Produção parlamentar do vereador Cícero João." },
+      { property: "og:description", content: "Produção parlamentar do Cícero João." },
       { property: "og:url", content: "/mandato" },
     ],
     links: [{ rel: "canonical", href: "/mandato" }],
@@ -22,7 +22,7 @@ function Mandato() {
       <PageHeader
         eyebrow="Mandato"
         title="Mandato em números"
-        description="Indicadores consolidados da atuação parlamentar de Cícero João na Câmara Municipal de Sorocaba."
+        description="Indicadores consolidados da atuação parlamentar de Cícero João em Sorocaba."
       />
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-5">
@@ -56,7 +56,7 @@ function Mandato() {
 
         <p className="mt-10 text-xs text-muted-foreground">
           Os números acima refletem a produção parlamentar consolidada e podem
-          ser conferidos nos sistemas oficiais da Câmara Municipal de Sorocaba.
+          ser conferidos nos sistemas oficiais de Sorocaba.
         </p>
       </section>
     </PageShell>

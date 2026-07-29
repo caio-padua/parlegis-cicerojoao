@@ -5,9 +5,9 @@ export const Route = createFileRoute("/biografia")({
   head: () => ({
     meta: [
       { title: "Biografia — Cícero João" },
-      { name: "description", content: "Trajetória de Cícero João: de São José do Belmonte-PE a vereador de Sorocaba-SP." },
+      { name: "description", content: "Trajetória de Cícero João: de São José do Belmonte-PE à vida pública em Sorocaba-SP." },
       { property: "og:title", content: "Biografia — Cícero João" },
-      { property: "og:description", content: "Trajetória de Cícero João: de São José do Belmonte-PE a vereador de Sorocaba-SP." },
+      { property: "og:description", content: "Trajetória de Cícero João: de São José do Belmonte-PE à vida pública em Sorocaba-SP." },
       { property: "og:url", content: "/biografia" },
       { property: "og:type", content: "profile" },
     ],
@@ -24,7 +24,6 @@ function Biografia() {
     { rotulo: "Escolaridade", valor: "Ensino superior completo" },
     { rotulo: "Eleição 2020", valor: "2.475 votos" },
     { rotulo: "Legislaturas", valor: "18ª (2021–2024) e 19ª (2025–2028)" },
-    { rotulo: "Partido", valor: "PSB" },
     { rotulo: "Cidade", valor: "Sorocaba — SP" },
   ];
 
@@ -47,9 +46,9 @@ function Biografia() {
           </p>
           <h2 className="mt-8 font-display text-2xl text-[var(--bordo)]">Vida pública</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Eleito vereador em 2020 com 2.475 votos, iniciou seu primeiro
-            mandato na 18ª Legislatura (2021–2024) da Câmara Municipal de
-            Sorocaba. Reeleito, segue atuando na 19ª Legislatura (2025–2028),
+            Eleito em 2020 com 2.475 votos, iniciou seu primeiro mandato na 18ª
+            Legislatura (2021–2024) em Sorocaba. Reeleito, segue atuando na
+            19ª Legislatura (2025–2028),
             com foco em zeladoria de bairros, acessibilidade, segurança
             pública e apoio ao pequeno comércio.
           </p>

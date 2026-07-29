@@ -31,6 +31,8 @@ export type Projeto = {
   status: "Aprovado" | "Em tramitação" | "Sancionado";
   resumo: string;
   ano: string;
+  /** ID do vídeo no YouTube explicando o projeto (null = em breve). */
+  youtubeId?: string | null;
 };
 
 export const projetos: Projeto[] = [
@@ -107,12 +109,72 @@ export const noticias = [
     titulo: "Audiência pública debate apoio ao comércio de bairro",
     data: "10 de fevereiro de 2025",
     resumo:
-      "Vereador participa de debate com pequenos empresários sobre desburocratização e crédito.",
+      "Cícero João participa de debate com pequenos empresários sobre desburocratização e crédito.",
   },
 ];
 
 export const agenda = [
-  { data: "Toda terça · 14h", titulo: "Atendimento no Gabinete", local: "Câmara Municipal — Sala 12" },
+  { data: "Toda terça · 14h", titulo: "Atendimento no Gabinete", local: "Escritório de atendimento — Centro" },
   { data: "1ª quinta do mês · 19h", titulo: "Reunião aberta — Zona Norte", local: "Salão paroquial — Aparecidinha" },
   { data: "Sábados alternados · 9h", titulo: "Cícero nos Bairros", local: "Roteiro divulgado nas redes" },
+];
+
+/* ---------------------------------------------------------------
+ * VÍDEOS
+ * Para publicar um vídeo, preencha `youtubeId` com o ID do vídeo
+ * (ex.: https://youtu.be/ABC123xyz  ->  youtubeId: "ABC123xyz").
+ * Enquanto estiver null, o card aparece como "gravação em breve".
+ * ------------------------------------------------------------- */
+
+export type Video = {
+  slug: string;
+  titulo: string;
+  descricao: string;
+  data: string;
+  tema: string;
+  youtubeId: string | null;
+};
+
+export const canaisVideo = {
+  youtube: "https://www.youtube.com/",
+  instagram: "https://www.instagram.com/",
+};
+
+export const videos: Video[] = [
+  {
+    slug: "prestacao-de-contas",
+    titulo: "Prestação de contas do trabalho realizado",
+    descricao:
+      "Resumo em vídeo das principais entregas, propostas e resultados alcançados junto à população.",
+    data: "2025",
+    tema: "Transparência",
+    youtubeId: null,
+  },
+  {
+    slug: "acessibilidade-calcadas",
+    titulo: "Acessibilidade: por que rebaixar calçadas muda vidas",
+    descricao:
+      "Explicação prática sobre a proposta de acessibilidade e o impacto para idosos, cadeirantes e famílias.",
+    data: "2025",
+    tema: "Acessibilidade",
+    youtubeId: null,
+  },
+  {
+    slug: "comercio-de-bairro",
+    titulo: "Comércio de bairro: menos burocracia, mais emprego",
+    descricao:
+      "Conversa com pequenos empreendedores sobre licenças, crédito e geração de renda no bairro.",
+    data: "2025",
+    tema: "Economia",
+    youtubeId: null,
+  },
+  {
+    slug: "sorocaba-nos-bairros",
+    titulo: "Nos bairros: ouvindo quem vive o problema",
+    descricao:
+      "Registro das visitas semanais, com demandas de zeladoria, iluminação e segurança.",
+    data: "2025",
+    tema: "Bairros",
+    youtubeId: null,
+  },
 ];

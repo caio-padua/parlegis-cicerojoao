@@ -7,7 +7,7 @@ export const Route = createFileRoute("/agenda")({
   head: () => ({
     meta: [
       { title: "Agenda pública — Cícero João" },
-      { name: "description", content: "Atendimentos, reuniões e visitas do mandato do vereador Cícero João." },
+      { name: "description", content: "Atendimentos, reuniões e visitas do mandato do Cícero João." },
       { property: "og:title", content: "Agenda pública — Cícero João" },
       { property: "og:description", content: "Atendimentos, reuniões e visitas do mandato." },
       { property: "og:url", content: "/agenda" },

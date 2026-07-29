@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CalendarDays, FileText, MapPin, Send } from "lucide-react";
+import { ArrowRight, CalendarDays, FileText, MapPin, PlayCircle, Send } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -18,13 +18,13 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cícero João — Vereador de Sorocaba" },
+      { title: "Cícero João — Sorocaba" },
       {
         name: "description",
         content:
-          "Portal do mandato do vereador Cícero João: atendimento, presença nos bairros e transparência em um só lugar.",
+          "Portal do mandato do Cícero João: atendimento, presença nos bairros e transparência em um só lugar.",
       },
-      { property: "og:title", content: "Cícero João — Vereador de Sorocaba" },
+      { property: "og:title", content: "Cícero João — Sorocaba" },
       {
         property: "og:description",
         content:
@@ -51,7 +51,7 @@ function Home() {
               Cícero João
             </h1>
             <p className="mt-3 font-display text-2xl text-[var(--petroleo)]">
-              Vereador por Sorocaba
+              Trabalho público em Sorocaba
             </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Um mandato próximo, organizado e aberto para ouvir a população.
@@ -73,6 +73,11 @@ function Home() {
                   <FileText className="mr-2 h-4 w-4" /> Conhecer projetos
                 </Link>
               </Button>
+              <Button asChild size="lg" variant="ghost" className="rounded-md text-[var(--bordo)] hover:bg-[var(--creme)]">
+                <Link to="/videos">
+                  <PlayCircle className="mr-2 h-4 w-4" /> Assistir vídeos
+                </Link>
+              </Button>
             </div>
           </div>
 
@@ -80,7 +85,7 @@ function Home() {
             <div className="absolute inset-0 -translate-x-3 translate-y-3 rounded-[2rem] bg-[var(--champagne)]/60" aria-hidden />
             <img
               src={heroFoto}
-              alt="Retrato institucional do vereador Cícero João"
+              alt="Retrato institucional do Cícero João"
               width={1024}
               height={1280}
               className="relative aspect-[4/5] w-full rounded-[2rem] object-cover shadow-elegant ring-1 ring-[var(--ouro)]/40"
@@ -131,7 +136,7 @@ function Home() {
             ))}
           </div>
           <p className="mt-6 text-xs text-white/60">
-            Dados consolidados a partir dos registros públicos da Câmara Municipal de Sorocaba. Sujeito a atualização.
+            Dados consolidados a partir dos registros públicos de Sorocaba. Sujeito a atualização.
           </p>
         </div>
       </section>
