@@ -3,6 +3,7 @@ import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import cjSymbol from "@/assets/cj-symbol.png.asset.json";
 
 const nav = [
   { to: "/", label: "Início" },
@@ -22,9 +23,11 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 bg-[var(--petroleo)] text-[var(--branco-quente)] filete-ouro">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3 group">
-          <span className="grid h-10 w-10 place-items-center rounded-full bg-[var(--bordo)] text-[var(--champagne)] font-display text-lg font-bold ring-1 ring-[var(--ouro)]/60">
-            CJ
-          </span>
+          <img
+            src={cjSymbol.url}
+            alt="Símbolo CJ — Cícero João"
+            className="h-11 w-auto shrink-0 drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]"
+          />
           <span className="flex flex-col leading-tight">
             <span className="font-display text-lg font-semibold tracking-tight">
               Cícero João

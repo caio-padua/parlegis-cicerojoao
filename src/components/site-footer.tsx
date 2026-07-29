@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import cjSymbol from "@/assets/cj-symbol.png.asset.json";
+import cjWordmark from "@/assets/cj-wordmark.png.asset.json";
 
 export function SiteFooter() {
   return (
@@ -7,13 +9,19 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3">
-              <span className="grid h-11 w-11 place-items-center rounded-full bg-[var(--bordo)] text-[var(--champagne)] font-display text-lg font-bold ring-1 ring-[var(--ouro)]/60">
-                CJ
-              </span>
+            <div className="flex items-center gap-4">
+              <img
+                src={cjSymbol.url}
+                alt="Símbolo CJ — Cícero João"
+                className="h-14 w-auto shrink-0"
+              />
               <div>
-                <p className="font-display text-xl">Gabinete Digital Cícero João</p>
-                <p className="text-sm text-[var(--champagne)]/90">
+                <img
+                  src={cjWordmark.url}
+                  alt="Cícero João"
+                  className="h-7 w-auto"
+                />
+                <p className="mt-2 text-sm text-[var(--champagne)]/90">
                   Sorocaba ouvida. Demandas organizadas. Trabalho acompanhado.
                 </p>
               </div>
