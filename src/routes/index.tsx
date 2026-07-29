@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CalendarDays, FileText, MapPin, Send } from "lucide-react";
+import { ArrowRight, CalendarDays, FileText, MapPin, PlayCircle, Send } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -71,6 +71,11 @@ function Home() {
               <Button asChild size="lg" variant="ghost" className="rounded-md text-[var(--bordo)] hover:bg-[var(--creme)]">
                 <Link to="/projetos">
                   <FileText className="mr-2 h-4 w-4" /> Conhecer projetos
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="ghost" className="rounded-md text-[var(--bordo)] hover:bg-[var(--creme)]">
+                <Link to="/videos">
+                  <PlayCircle className="mr-2 h-4 w-4" /> Assistir vídeos
                 </Link>
               </Button>
             </div>
