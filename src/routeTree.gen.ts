@@ -14,6 +14,7 @@ import { Route as ProjetosRouteImport } from './routes/projetos'
 import { Route as NoticiasRouteImport } from './routes/noticias'
 import { Route as MandatoRouteImport } from './routes/mandato'
 import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as CompromissosRouteImport } from './routes/compromissos'
 import { Route as BiografiaRouteImport } from './routes/biografia'
 import { Route as BairrosRouteImport } from './routes/bairros'
 import { Route as AgendaRouteImport } from './routes/agenda'
@@ -43,6 +44,11 @@ const MandatoRoute = MandatoRouteImport.update({
 const ContatoRoute = ContatoRouteImport.update({
   id: '/contato',
   path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompromissosRoute = CompromissosRouteImport.update({
+  id: '/compromissos',
+  path: '/compromissos',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BiografiaRoute = BiografiaRouteImport.update({
@@ -76,6 +82,7 @@ export interface FileRoutesByFullPath {
   '/agenda': typeof AgendaRoute
   '/bairros': typeof BairrosRoute
   '/biografia': typeof BiografiaRoute
+  '/compromissos': typeof CompromissosRoute
   '/contato': typeof ContatoRoute
   '/mandato': typeof MandatoRoute
   '/noticias': typeof NoticiasRoute
@@ -88,6 +95,7 @@ export interface FileRoutesByTo {
   '/agenda': typeof AgendaRoute
   '/bairros': typeof BairrosRoute
   '/biografia': typeof BiografiaRoute
+  '/compromissos': typeof CompromissosRoute
   '/contato': typeof ContatoRoute
   '/mandato': typeof MandatoRoute
   '/noticias': typeof NoticiasRoute
@@ -101,6 +109,7 @@ export interface FileRoutesById {
   '/agenda': typeof AgendaRoute
   '/bairros': typeof BairrosRoute
   '/biografia': typeof BiografiaRoute
+  '/compromissos': typeof CompromissosRoute
   '/contato': typeof ContatoRoute
   '/mandato': typeof MandatoRoute
   '/noticias': typeof NoticiasRoute
@@ -115,6 +124,7 @@ export interface FileRouteTypes {
     | '/agenda'
     | '/bairros'
     | '/biografia'
+    | '/compromissos'
     | '/contato'
     | '/mandato'
     | '/noticias'
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/agenda'
     | '/bairros'
     | '/biografia'
+    | '/compromissos'
     | '/contato'
     | '/mandato'
     | '/noticias'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/agenda'
     | '/bairros'
     | '/biografia'
+    | '/compromissos'
     | '/contato'
     | '/mandato'
     | '/noticias'
@@ -152,6 +164,7 @@ export interface RootRouteChildren {
   AgendaRoute: typeof AgendaRoute
   BairrosRoute: typeof BairrosRoute
   BiografiaRoute: typeof BiografiaRoute
+  CompromissosRoute: typeof CompromissosRoute
   ContatoRoute: typeof ContatoRoute
   MandatoRoute: typeof MandatoRoute
   NoticiasRoute: typeof NoticiasRoute
@@ -194,6 +207,13 @@ declare module '@tanstack/react-router' {
       path: '/contato'
       fullPath: '/contato'
       preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compromissos': {
+      id: '/compromissos'
+      path: '/compromissos'
+      fullPath: '/compromissos'
+      preLoaderRoute: typeof CompromissosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/biografia': {
@@ -251,6 +271,7 @@ const rootRouteChildren: RootRouteChildren = {
   AgendaRoute: AgendaRoute,
   BairrosRoute: BairrosRoute,
   BiografiaRoute: BiografiaRoute,
+  CompromissosRoute: CompromissosRoute,
   ContatoRoute: ContatoRoute,
   MandatoRoute: MandatoRoute,
   NoticiasRoute: NoticiasRoute,
