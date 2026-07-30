@@ -16,6 +16,91 @@ export const areasTematicas = [
   { titulo: "Educação", desc: "Escolas, creches e cultura." },
 ] as const;
 
+export type Compromisso = {
+  slug: string;
+  tema: string;
+  titulo: string;
+  problema: string;
+  proposta: string;
+  impacto: string;
+  cta: string;
+};
+
+export const compromissosEstaduais: Compromisso[] = [
+  {
+    slug: "saude-regional",
+    tema: "Saúde",
+    titulo: "Fila menor na saúde da região",
+    problema:
+      "Quem mora na região de Sorocaba espera meses por consulta com especialista, exame e cirurgia eletiva.",
+    proposta:
+      "Ampliar mutirões de exames e cirurgias, com repasse estadual vinculado a metas de espera e transporte garantido entre as cidades.",
+    impacto:
+      "Menos tempo de espera, diagnóstico mais cedo e ninguém deixando de tratar por falta de condução.",
+    cta: "Contar meu caso na saúde",
+  },
+  {
+    slug: "seguranca",
+    tema: "Segurança",
+    titulo: "Bairro iluminado e patrulhado",
+    problema:
+      "Ruas escuras, praças abandonadas e ronda espaçada fazem o crime crescer justamente na periferia.",
+    proposta:
+      "Programa estadual de iluminação em LED e videomonitoramento integrado com as polícias e as guardas municipais.",
+    impacto:
+      "Voltar do trabalho à noite com segurança e usar a praça do bairro sem medo.",
+    cta: "Indicar um ponto crítico",
+  },
+  {
+    slug: "educacao-tecnica",
+    tema: "Educação técnica",
+    titulo: "Curso técnico perto de casa",
+    problema:
+      "O jovem termina o ensino médio sem qualificação e a indústria da região não encontra mão de obra treinada.",
+    proposta:
+      "Expandir vagas técnicas e cursos noturnos em parceria com escolas estaduais e empresas da região.",
+    impacto:
+      "Primeiro emprego mais rápido, salário melhor e o jovem ficando na própria cidade.",
+    cta: "Sugerir um curso para meu bairro",
+  },
+  {
+    slug: "mobilidade",
+    tema: "Mobilidade",
+    titulo: "Estrada boa e sem pedágio abusivo",
+    problema:
+      "Rodovias da região concentram acidentes e tarifas que pesam no bolso de quem trabalha entre cidades.",
+    proposta:
+      "Cobrar duplicações, recuperação de trechos críticos e revisão de tarifas e de novos pedágios em vias urbanas.",
+    impacto:
+      "Viagem mais segura para o trabalho e menos custo no transporte do dia a dia.",
+    cta: "Relatar um trecho perigoso",
+  },
+  {
+    slug: "comercio-de-bairro",
+    tema: "Comércio e emprego",
+    titulo: "Menos burocracia para o pequeno comércio",
+    problema:
+      "Abrir e manter um comércio de bairro exige licenças demoradas e custo que o pequeno não aguenta.",
+    proposta:
+      "Simplificar licenciamento estadual, ampliar linhas de crédito ao microempreendedor e apoiar feiras e associações de bairro.",
+    impacto:
+      "Mais loja aberta, mais emprego perto de casa e dinheiro circulando no próprio bairro.",
+    cta: "Falar como empreendedor",
+  },
+  {
+    slug: "acessibilidade-zeladoria",
+    tema: "Acessibilidade",
+    titulo: "Cidade que o idoso e o cadeirante conseguem usar",
+    problema:
+      "Calçada quebrada, sem rebaixamento e travessia sem sinalização isolam idosos, cadeirantes e mães com carrinho.",
+    proposta:
+      "Linha estadual de recursos para calçada acessível, travessia elevada e sinalização em pontos de grande fluxo.",
+    impacto:
+      "Sair de casa, ir ao posto e à escola com segurança, sem depender de ninguém.",
+    cta: "Apontar um local sem acesso",
+  },
+];
+
 export const mandatoNumeros = [
   { numero: "1.039", label: "Requerimentos" },
   { numero: "306", label: "Indicações" },
